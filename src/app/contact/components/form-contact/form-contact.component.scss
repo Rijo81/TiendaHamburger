@@ -1,0 +1,37 @@
+.form-contact{
+  margin: 15px;
+  border: 1px dotted #8d8c8c;
+  padding: 20px;
+  background: white;
+}
+
+input{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+  border: 1px solid #46a4ce;
+  background: white;
+}
+
+.input-contact{
+  margin: 10px;
+}
+
+button{
+  margin: 10px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: blueviolet;
+}
+
+label{
+  color: black;
+}
+.error{
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}

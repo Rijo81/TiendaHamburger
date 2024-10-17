@@ -1,0 +1,14 @@
+<!-- <div class="footer">
+  <h4>Footer</h4>
+</div> -->
+
+  <div class="footer">
+
+    <button [routerLink]="['/home']" class="option-menu">Home</button>
+    <button [routerLink]="['/store']" class="option-menu">Store</button>
+    <button [routerLink]="['/contact']" class="option-menu">Contact</button>
+    <button [routerLink]="['/notifications']" class="option-menu">Notificacion</button>
+    <!-- <button [routerLink]="['/users']" class="option-menu">Login</button> -->
+     <span class="cant-carrito" [ngClass]="{'emptry-carrito': cant === 0}">{{cant}}</span>
+  </div>
+

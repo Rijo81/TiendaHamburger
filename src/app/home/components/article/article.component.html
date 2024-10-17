@@ -1,0 +1,30 @@
+<div class="article" (click)="gotoArticles()">
+  <!-- [routerLink]="['/home/article/']"
+  [queryParams]="{id: article.id}" -->
+  <!-- (click)="gotoArticles()" -->
+  <!-- [routerLink]="['/home/article/' + article.id]" -->
+  <div>
+    <img src="/assets/img/hamburger3.jpg" alt="No se visualiza">
+  </div>
+  <div class="article-title">
+    <h2>{{article.title}}</h2>
+  </div>
+  <div>
+    <p>{{article.body}}</p>
+  </div>
+</div>
+
+<!-- @if (article) {
+
+  <div class="article">
+    <div>
+      <img [src]="article.image.url" [alt]="article.image.alt">
+    </div>
+    <div class="article-title">
+      <h2>{{article.title}}</h2>
+    </div>
+    <div>
+      <p>{{article.description}}</p>
+    </div>
+  </div>
+} -->

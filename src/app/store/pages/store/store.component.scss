@@ -1,0 +1,50 @@
+.contenido{
+  margin: 10px;
+    border: 2px solid white;
+    background: oldlace;
+    color: black;
+    font-style: revert-layer;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.title{
+  font-weight: bold !important;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.btn-remove {
+  background: #ef6666;
+  color: white !important;
+  width: 45px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #607D8B;
+  margin-right: 10px;
+}
+
+.btn-add {
+  background: #4CAF50;
+  color: white !important;
+  width: 45px;
+  height: 30px;
+  border: 1px solid #4CAF50;
+  border-radius: 10px;
+}
+
+.content-carrito{
+  display: flex;
+  position: sticky;
+  top: 60px;
+  justify-content: end;
+}
+.detalle-carrito{
+  background: #FFC107;
+  padding: 10px;
+  color: black !important;
+  font-weight: bold !important;
+  border-radius: 5px;
+  margin-right: 10px;
+}

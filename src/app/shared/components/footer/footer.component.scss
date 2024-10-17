@@ -1,0 +1,41 @@
+.footer {
+  position: fixed !important;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #150101;
+  display: flex !important;
+  padding: 10px 0px;
+  justify-content: center !important;
+  background: aliceblue !important;
+
+}
+
+h4{
+  margin-top: 15px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.option-menu{
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border: 1px solid #000105;
+  border-radius: 5px;
+  background-color: #7090e8;
+}
+
+.cant-carrito{
+  background: rgb(0, 231, 35);
+  color:black;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: bold !important;
+}
+
+.emptry-carrito{
+  background: rgb(198, 0, 0) !important;
+  color: #ffffff;
+}

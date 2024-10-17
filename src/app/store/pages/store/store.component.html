@@ -1,0 +1,57 @@
+
+<ion-content>
+  <app-header [title]="titlePage"></app-header>
+  <!-- <div>
+    <input (keyup)="press($event)">
+  </div> -->
+  <div>
+    <div>
+      <h1 style="text-align: center; font-weight: bold;">Store Hamburger</h1>
+    </div>
+     @if (!cargando) {
+      <app-detail-carrito></app-detail-carrito>
+        @for (item of items; track $index) {
+          <app-product-detail
+          (click)=onClick()
+          [item]="item"
+          (add)="addItemProduct(item)"
+          (remove)="removeItemProduct(item)"
+          ></app-product-detail>
+          <!-- (add)="addItemProduct(item)"
+          (remove)="removeItemProduct(item)" -->
+          <!-- @if (item) {
+            <div class="contenido">
+              <div>
+                <h3 class="title">{{item.name}}</h3>
+              </div>
+              <div>
+                <p>{{item.description}}</p>
+              </div>
+              @if (item.image) {
+                <div>
+                  <img [src]="item.image" [alt]="item.name">
+                </div>
+              }@else {
+                <div>
+                  <img src="/assets/img/nodisponible.jpg">
+                </div>
+              }
+              <div>
+                <p>{{item.simbolDinero + item.price}}</p>
+              </div>
+              <div style="text-align: end;">
+                <button (click)="removeItemProduct(item)" class="btn-remove"> - </button>
+                <button (click)="addItemProduct(item, $index)" class="btn-add"> + </button>
+              </div>
+            </div>
+          } -->
+        } @empty {
+          <p>No hay productos disponibles.</p>
+        }
+     }@else {
+       <p style="text-align: center; color: rgb(255, 255, 255); font-weight: bold; animation-play-state: running;">cargando....</p>
+     }
+    <app-footer></app-footer>
+
+  </div>
+</ion-content>

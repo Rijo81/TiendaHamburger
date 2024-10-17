@@ -1,0 +1,26 @@
+.article {
+  margin: 10px;
+  background: rgb(233, 217, 2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.article-title{
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: black !important;
+}
+
+.article img{
+  width: auto !important;
+  height: 150px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.article p{
+  margin: 10px 0px;
+  color: black !important;
+}

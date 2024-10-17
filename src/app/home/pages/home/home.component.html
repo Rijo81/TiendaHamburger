@@ -1,0 +1,18 @@
+<ion-content>
+  <div>
+    <app-header></app-header>
+    <app-detail-carrito></app-detail-carrito>
+    @if (!cargando) {
+      @for (articlee of articleH; track $index) {
+        <app-article [article]="articlee"></app-article>
+      }@empty {
+        <p style="text-align: center; color: rgb(26, 0, 155);">No hay datos disponibles.</p>
+      }
+    }@else {
+      <p style="text-align: center; color: rgb(240, 240, 240);">Cargando....</p>
+    }
+    <!-- <app-not-found></app-not-found> -->
+    <app-footer></app-footer>
+
+  </div>
+</ion-content>

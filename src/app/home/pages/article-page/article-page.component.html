@@ -1,0 +1,28 @@
+<ion-content>
+  <app-header [title]="titleArticlePage"></app-header>
+  <app-detail-carrito></app-detail-carrito>
+  @if (article) {
+    <div style="margin: 10px;">
+      <div>
+        <h2 style="background: darkturquoise; color: black; font-size: 30px;">{{article.title}}</h2>
+      </div>
+      <!-- Contenido -->
+       <div>
+        <p style="font-weight: bold; font-size: 22px;">{{article.body}}</p>
+        <p style="color: black;
+        font-size: 22px;
+        background: white;
+        font-weight: bold;">El ID del Articulo es: {{article.id}}</p>
+       </div>
+       <div>
+        <button
+        style="background: white;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;" [routerLink]="['/home']">Regresar</button>
+       </div>
+    </div>
+  }
+</ion-content>

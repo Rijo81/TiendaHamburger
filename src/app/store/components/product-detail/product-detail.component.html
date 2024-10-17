@@ -1,0 +1,43 @@
+
+
+  <!-- <div class="producto">
+    <div>
+      <h3 class="title">Titulo Producto</h3>
+      <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Error sunt voluptate, iure ab non asperiores eveniet nulla
+        nemo adipisci voluptatibus cum libero obcaecati ipsa similique
+        facilis quos reprehenderit, recusandae ad!</p>
+    </div>
+    <div style="text-align: end;">
+      <button [routerLink]="['/store/item']">Ver productos</button>
+    </div>
+  </div> -->
+  @if (item) {
+    <div class="contenido" [ngStyle]="{'background': colores}">
+      <div>
+        <h3 class="title">{{item.name}}</h3>
+      </div>
+      <div>
+        <p>{{item.description}}</p>
+      </div>
+      @if (item.image) {
+        <div>
+          <img [src]="item.image" [alt]="item.name">
+        </div>
+      }@else {
+        <div>
+          <img src="/assets/img/nodisponible.jpg">
+        </div>
+      }
+      <div>
+        <p>{{item.simbolDinero + item.price}}</p>
+      </div>
+      <div style="text-align: end;">
+        <!-- EVENTOS EN ANGULAR -->
+         <span>{{count}}</span>
+        <button (click)="removeItem(item)" class="btn-remove"> - </button>
+        <button (click)="addItem(item)" class="btn-add"> + </button>
+      </div>
+    </div>
+  }
+
