@@ -6,7 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FormContactComponent } from './components/form-contact/form-contact.component';
 import { IonContent } from '@ionic/angular/standalone';
 import { SharedModule } from '../shared/shared.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     ContactRoutingModule,
     IonContent,
     SharedModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ContactModule { }

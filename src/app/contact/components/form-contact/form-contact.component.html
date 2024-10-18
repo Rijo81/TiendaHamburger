@@ -16,5 +16,56 @@
   <div style="text-align: center;">
     <button (click)="enviar()">Enviar Contacto</button>
   </div>
+
+  <hr>
+  <h2 style="text-align: center; color: black; font-weight: bold;">Formulario Reactivo</h2>
+  <div class="form-contact">
+    <form [formGroup]="dataForm" (ngSubmit)="enviarForm()">
+
+      <div class="input-contect">
+        <label>Email</label>
+        <input placeholder="Email" formControlName="email">
+        <span style="text-align: end;"
+        *ngIf="dataForm.controls['email'].hasError('required')">
+          <i style="color:  rgb(144, 0, 0);">Este campo es <strong>requerido</strong></i>
+        </span>
+        <span style="text-align: end;"
+        *ngIf="dataForm.controls['email'].hasError('email')">
+          <i style="color:  rgb(144, 0, 0);">Ingrese un email <strong>valido</strong></i>
+        </span>
+      </div>
+
+      <div class="input-contect">
+        <label>Nombre</label>
+        <input placeholder="Nombre" formControlName="name">
+        <span style="text-align: end;"
+        *ngIf="dataForm.controls['name'].hasError('required')">
+          <i style="color: rgb(144, 0, 0);">Este campo es <strong>requerido</strong></i>
+        </span>
+      </div>
+
+      <div class="input-contect">
+        <label>Celular</label>
+        <input placeholder="Celular" formControlName="phone">
+        <span style="text-align: end;"
+        *ngIf="dataForm.controls['phone'].hasError('required')">
+          <i style="color:  rgb(144, 0, 0);">Este campo es <strong>requerido</strong></i>
+        </span>
+        <span style="text-align: end;"
+        *ngIf="dataForm.controls['phone'].hasError('invalidPhone')">
+          <i style="color:  rgb(144, 0, 0);">Esto no es un <strong>Numero telefonico.</strong></i>
+        </span>
+
+      </div>
+
+      <div style="text-align: center;">
+        <button type="submit" [disabled]="cargando">
+          <strong>Enviar</strong>
+        </button>
+      </div>
+
+    </form>
+  </div>
+  <div style="margin-bottom: 60px;"></div>
 </div>
 <!-- [(ngModel)]="form.email" -->
