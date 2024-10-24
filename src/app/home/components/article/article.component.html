@@ -7,10 +7,16 @@
     <img src="/assets/img/hamburger3.jpg" alt="No se visualiza">
   </div>
   <div class="article-title">
-    <h2>{{article.title}}</h2>
+    <h2 style="font-weight: bold;" appHighlight="red">{{article.title | uppercase}}</h2>
   </div>
   <div>
-    <p>{{article.body}}</p>
+    <p>{{article.body | short:'100'}}</p>
+  </div>
+  <div>
+    <p style="font-weight: bold;">{{article.time | date}}</p>
+  </div>
+  <div>
+    <p style="font-weight: bold;">{{article.time | date: 'yyyy-mm-dd'}}</p>
   </div>
 </div>
 

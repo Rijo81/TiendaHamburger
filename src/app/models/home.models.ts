@@ -15,6 +15,7 @@ export namespace ModelsHome{
     body: string;
     userId: number;
     id?: number;
+    time?: Date;
   }
   export interface Interface3 {}
   export interface Interface4 {}

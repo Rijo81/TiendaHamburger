@@ -6,6 +6,9 @@ import { ArticleComponent } from './components/article/article.component';
 import { IonContent } from '@ionic/angular/standalone';
 import { SharedModule } from '../shared/shared.module';
 import { ArticlePageComponent } from './pages/article-page/article-page.component';
+import { ShortPipe } from '../shared/pipes/short.pipe';
+import { HighlightDirective } from '../shared/directives/highlight.directive';
+import { IconNotificationComponent } from '../notifications/components/icon-notification/icon-notification.component';
 
 
 
@@ -20,6 +23,8 @@ import { ArticlePageComponent } from './pages/article-page/article-page.componen
     HomeRoutingModule,
     IonContent,
     SharedModule,
+    ShortPipe,
+    HighlightDirective,
 
   ]
 })

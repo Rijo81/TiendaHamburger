@@ -29,6 +29,9 @@ export class HomeComponent  implements OnInit {
     console.log('data => ', res);
     if(res){
       this.articleH = res;
+      this.articleH.forEach(article =>{
+        article.time = new Date();
+      });
     }
     this.cargando = false;
   }
